@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MBC</title>
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Controle de Estoque</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <a href="https://pt.wikipedia.org/wiki/Satoru_Gojo"></a>
-    </header>
-    <div class="container">
-        <h2>escolha a operação desejada</h2>
-        <form action="script.php" method="post">
+  <div class="container">
+    <h1>Controle de Estoque</h1>
+    <form action="pages/home.html" method="post">
+      <label for="login">Login</label>
+      <input type="text" id="login" name="login" placeholder="Digite seu login" required>
 
-            <button type="submit"name="acao" value="criar">criar</button>
-            <button type="submit"name="acao" value="buscar">buscar</button>
-            <button type="submit"name="acao" value="atualizar">atualizar</button>
-            <button type="submit"name="acao" value="deletar">deletar</button>
-        </form>
+      <label for="senha">Senha</label>
+      <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
 
-    </div>
-    
+      <button type="submit">Entrar</button>
+    </form>
+    <p>
+      Não tem cadastro? <a href="pages/cadastro-usuario.html">Cadastre-se</a>
+    </p>
+  </div>
 </body>
 </html>
